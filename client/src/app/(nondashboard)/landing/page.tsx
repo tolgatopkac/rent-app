@@ -1,7 +1,8 @@
 import React from "react";
+import { HeroSection } from "./HeroSection";
 
 function Landing() {
-  return <div>Landing</div>;
+  return <HeroSection />;
 }
 
 export default Landing;
