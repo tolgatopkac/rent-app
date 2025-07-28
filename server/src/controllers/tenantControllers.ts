@@ -10,7 +10,7 @@ export const getTenant = async (req: Request, res: Response): Promise<void> => {
       where: { cognitoId },
       include: {
         favorites: true,
-        properties: true,
+        //   properties: true,
       },
     });
     if (tenant) {
