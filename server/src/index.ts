@@ -4,6 +4,7 @@ import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
 import bodyParser from "body-parser";
+import { authMiddleware } from "./middleware/authMiddleware";
 
 /* route import */
 
@@ -18,6 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
 /* ROUTES */
+// authMiddleware(["manager"])
 app.get("/", (req, res) => {
   res.send("This is home route");
 });
